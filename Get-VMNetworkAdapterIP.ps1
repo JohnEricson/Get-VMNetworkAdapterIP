@@ -6,5 +6,5 @@
 #
 # Author: John Ericson 2021
 function Get-VMNetworkAdapterIP {
-	get-vm | select -ExpandProperty NetworkAdapters | select VMName, IPAddresses
+	get-vm | select -ExpandProperty NetworkAdapters | select VMName, IPAddresses | format-table
 }
